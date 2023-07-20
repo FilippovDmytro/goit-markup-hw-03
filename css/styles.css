@@ -101,6 +101,7 @@ body {
 }
 
 .logo-img {
+  margin-right: 76px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -111,11 +112,10 @@ body {
 }
 .studio {
   color: var(--navy-blue);
-  margin-right: 76px;
 }
 .page-nav {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: flex-end;
 }
 
@@ -133,6 +133,7 @@ body {
   color: var(--action-color);
 }
 .menu-link {
+  padding: 24px 0;
   font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
@@ -244,6 +245,7 @@ body {
 /* ------products---------- */
 
 .products {
+  padding-bottom: 120px;
   background: var(--white);
 }
 
@@ -251,7 +253,6 @@ body {
   display: flex;
   flex-basis: calc((100% - 48px) / 3);
   gap: 24px;
-  padding-bottom: 120px;
 }
 .main {
   margin-bottom: 72px;
@@ -268,11 +269,23 @@ body {
 .team {
   background-color: #f4f4fd;
 }
+.team-title {
+  text-align: center;
+  margin-bottom: 72px;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue);
+  background-color: #f4f4fd;
+  text-transform: capitalize;
+}
+
 .group {
   display: flex;
   flex-basis: calc((100% - 72px) / 4);
   gap: 24px;
   background-color: #f4f4fd;
+  border-radius: 0px 0px 4px 4px;
 }
 .work-card {
   display: flex;
@@ -280,7 +293,6 @@ body {
   align-items: center;
   justify-content: center;
   padding-top: 32px;
-  margin-bottom: 8px;
   padding-bottom: 32px;
   border-radius: 0px 0px 4px 4px;
   background: var(--white, #fff);
@@ -288,15 +300,12 @@ body {
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
-.team-title {
-  margin-bottom: 72px;
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  color: var(--navy-blue);
-  background-color: #f4f4fd;
+.work-title {
   text-align: center;
-  text-transform: capitalize;
+  margin-bottom: 8px;
+}
+.team-item {
+  text-align: center;
 }
 
 /*------------ footer ----------- */
@@ -366,6 +375,7 @@ body {
 .btn:focus {
   color: var(--white);
   background: var(--action-color);
+  border: 1px solid transparent;
 }
 
 .menu-text {
@@ -378,8 +388,7 @@ body {
 .menu-letter {
   color: #434455;
 }
-.galery-cards {
-}
+
 .gallery-menu {
   display: flex;
   flex-wrap: wrap;
